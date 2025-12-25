@@ -1,0 +1,15 @@
+/* Ejemplo: Animación de entrada en el dashboard */
+.dashboard .card {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover en menú lateral */
+.sidebar .nav-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

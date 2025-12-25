@@ -1,0 +1,2344 @@
+﻿[
+{
+  "model": "accounts.usuario",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$hXKlcIgYfU9z3XIkUa0zdF$F0pq6Nz6ETpg7d2ES39Fz3QIHuGvzosKik4s3N3wUjU=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "luis",
+    "first_name": "Luis",
+    "last_name": "RodrÝguez Hernßndez",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-08T16:19:52.585Z",
+    "email": "luisrodher98@gmail.com",
+    "tipo": "admin",
+    "telefono": "691123123",
+    "token_2fa": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.usuario",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$MO70a0B8i4kmqX1zWOjrbP$woCa3Gqu4uDtWoIdZvN2uE3VWQYdmXeK4P7/058Hlqk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "bruno",
+    "first_name": "Bruno",
+    "last_name": "Mßrtinez Escobar",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-06-08T16:24:54.998Z",
+    "email": "bruno@gmail.com",
+    "tipo": "gestor",
+    "telefono": "612123123",
+    "token_2fa": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.usuario",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$fP7a5VXe7NhWm6gztW8nI5$o+sjsL5MCcb8+Cr6r6XoR/4rZazUJ0HLdBMDAO9DxYc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "angel",
+    "first_name": "┴ngel",
+    "last_name": "Medina Jacinto",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-06-08T16:55:25.405Z",
+    "email": "angel@gmail.com",
+    "tipo": "gestor",
+    "telefono": "654123321",
+    "token_2fa": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.usuario",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$VzaUJrf0CpJvzlBsctgHvY$Ae+92bxW2NuPC5zCubUEQz+cwZCBPC+A/ZUQ/FpIfRk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "javier",
+    "first_name": "Javier",
+    "last_name": "Sußrez RodrÝguez",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-06-08T17:15:42.550Z",
+    "email": "javier@gmail.com",
+    "tipo": "gestor",
+    "telefono": "645321321",
+    "token_2fa": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.usuario",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$iThMVy0Hx9SQhbv4zuXMyC$UfZvHocVVr7keUIk5SED6s3VJK5xWtvpPk4PSGrcYac=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "luisito",
+    "first_name": "Luisito",
+    "last_name": "RodrÝguez Hernßndez",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-06-08T17:41:29.542Z",
+    "email": "luisito@gmail.com",
+    "tipo": "cliente",
+    "telefono": "623432231",
+    "token_2fa": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.direccion",
+  "pk": 1,
+  "fields": {
+    "usuario": 2,
+    "calle": "Camino de ┴ngela Espejo 65 Piso 8",
+    "ciudad": "Sevilla",
+    "codigo_postal": "41013",
+    "pais": "Espa±a"
+  }
+},
+{
+  "model": "accounts.direccion",
+  "pk": 2,
+  "fields": {
+    "usuario": 5,
+    "calle": "Camino de ┴ngela Espejo 62 Piso 3",
+    "ciudad": "Sevilla",
+    "codigo_postal": "41013",
+    "pais": "Espa±a"
+  }
+},
+{
+  "model": "accounts.solicitudgestor",
+  "pk": 1,
+  "fields": {
+    "usuario": 5,
+    "nombre_tienda": "Tienda 1",
+    "identificacion_fiscal": "32132132S",
+    "direccion": "Calle Mario 12, 41013, Sevilla",
+    "telefono": "656678876",
+    "estado": "pendiente",
+    "fecha_creacion": "2025-06-09T11:37:16.798Z",
+    "fecha_actualizacion": "2025-06-09T11:37:16.798Z"
+  }
+},
+{
+  "model": "products.categoria",
+  "pk": 1,
+  "fields": {
+    "nombre": "Alimentaci¾n",
+    "descripcion": "Comidas, bebidas, suplementos..."
+  }
+},
+{
+  "model": "products.categoria",
+  "pk": 2,
+  "fields": {
+    "nombre": "Herramientas",
+    "descripcion": "Herramientas"
+  }
+},
+{
+  "model": "products.categoria",
+  "pk": 3,
+  "fields": {
+    "nombre": "Decoraci¾n",
+    "descripcion": "Decoraci¾n hogar"
+  }
+},
+{
+  "model": "products.categoria",
+  "pk": 4,
+  "fields": {
+    "nombre": "Ropa",
+    "descripcion": "Ropa"
+  }
+},
+{
+  "model": "products.categoria",
+  "pk": 5,
+  "fields": {
+    "nombre": "Calzado",
+    "descripcion": "Calzado"
+  }
+},
+{
+  "model": "products.categoria",
+  "pk": 6,
+  "fields": {
+    "nombre": "Entretenimiento",
+    "descripcion": "Videojuegos, juegos de mesa, pelÝculas..."
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 1,
+  "fields": {
+    "titulo": "Zapatos deportivos blancos.",
+    "descripcion": "Zapatos veraniegos y muy c¾modos para hacer deporte en verano.",
+    "precio": "30.00",
+    "imagen": "productos/botines_blancos.jpg",
+    "categoria": 5,
+    "vendedor": 2,
+    "creado_en": "2025-06-08T16:33:51.035Z",
+    "actualizado_en": "2025-06-08T16:33:51.035Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 2,
+  "fields": {
+    "titulo": "Lßmpara de lava",
+    "descripcion": "Lßmpara de decoraci¾n con luz LED ideal para dormitorio.",
+    "precio": "10.99",
+    "imagen": "productos/lampara_lava.webp",
+    "categoria": 3,
+    "vendedor": 2,
+    "creado_en": "2025-06-08T16:37:37.867Z",
+    "actualizado_en": "2025-06-08T16:37:37.867Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 4,
+  "fields": {
+    "titulo": "Conjunto deportivo blanco (Mujer).",
+    "descripcion": "Conjunto deportivo c¾modo, perfecto para ir al gimnasio, correr...",
+    "precio": "15.00",
+    "imagen": "productos/conjunto_deportivo_blanco_TXG065i.webp",
+    "categoria": 4,
+    "vendedor": 2,
+    "creado_en": "2025-06-08T16:51:53.960Z",
+    "actualizado_en": "2025-06-08T16:51:53.960Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 5,
+  "fields": {
+    "titulo": "Pantal¾n vaquero azul claro (Hombre)",
+    "descripcion": "Pantal¾n vaquero ancho para hombre, azul claro.",
+    "precio": "16.75",
+    "imagen": "productos/Vaquero_hombre.webp",
+    "categoria": 4,
+    "vendedor": 2,
+    "creado_en": "2025-06-08T16:54:35.504Z",
+    "actualizado_en": "2025-06-08T16:54:35.504Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 6,
+  "fields": {
+    "titulo": "Tablero ajedrez",
+    "descripcion": "Tablero de ajedrez peque±o con fichas.",
+    "precio": "10.99",
+    "imagen": "productos/ajedrez.jpg",
+    "categoria": 6,
+    "vendedor": 3,
+    "creado_en": "2025-06-08T16:59:34.661Z",
+    "actualizado_en": "2025-06-08T16:59:34.661Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 7,
+  "fields": {
+    "titulo": "Monopoly Classic",
+    "descripcion": "Monopoly classic, tradicional juego de mesa, familiar.",
+    "precio": "25.99",
+    "imagen": "productos/monopoly.jpg",
+    "categoria": 6,
+    "vendedor": 3,
+    "creado_en": "2025-06-08T17:03:22.514Z",
+    "actualizado_en": "2025-06-08T17:03:22.514Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 8,
+  "fields": {
+    "titulo": "Mesa de futbolÝn peque±a.",
+    "descripcion": "Mesa peque±a de futbolÝn 140x90x120cm.",
+    "precio": "45.00",
+    "imagen": "productos/futbolin.jpg",
+    "categoria": 6,
+    "vendedor": 3,
+    "creado_en": "2025-06-08T17:08:59.624Z",
+    "actualizado_en": "2025-06-08T17:08:59.624Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 9,
+  "fields": {
+    "titulo": "Juego destornilladores",
+    "descripcion": "Palas de acero inoxidable cromado vanadio para mayor resistencia y durabilidad, con puntas magnÚticas. Empu±adura perfilada y engomada de agarre c¾modo para un control sencillo.",
+    "precio": "34.95",
+    "imagen": "productos/destornilladores.webp",
+    "categoria": 2,
+    "vendedor": 3,
+    "creado_en": "2025-06-08T17:10:48.623Z",
+    "actualizado_en": "2025-06-08T19:03:35.042Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 10,
+  "fields": {
+    "titulo": "Segueta",
+    "descripcion": "Segueta para cortar madera.",
+    "precio": "11.25",
+    "imagen": "productos/segueta.jpg",
+    "categoria": 2,
+    "vendedor": 4,
+    "creado_en": "2025-06-08T17:27:03.504Z",
+    "actualizado_en": "2025-06-08T17:27:03.504Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 11,
+  "fields": {
+    "titulo": "Llave inglesa de acero 3PCs",
+    "descripcion": "Juego de 3 llaves inglesas de acero con mango de goma.",
+    "precio": "19.99",
+    "imagen": "productos/llave_inglesa.webp",
+    "categoria": 2,
+    "vendedor": 4,
+    "creado_en": "2025-06-08T17:28:40.971Z",
+    "actualizado_en": "2025-06-08T17:28:40.971Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 12,
+  "fields": {
+    "titulo": "Papa Delta Grefusa",
+    "descripcion": "Paquete grande de Papa Delta Grefusa",
+    "precio": "1.45",
+    "imagen": "productos/papa_delta.webp",
+    "categoria": 1,
+    "vendedor": 4,
+    "creado_en": "2025-06-08T17:31:23.650Z",
+    "actualizado_en": "2025-06-08T17:31:23.650Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 13,
+  "fields": {
+    "titulo": "Whey Protein Isolated (500gr) sin sabor.",
+    "descripcion": "Bolsa de 500 gramos de proteina aislada sin sabor.",
+    "precio": "26.90",
+    "imagen": "productos/proteina.jpg",
+    "categoria": 1,
+    "vendedor": 4,
+    "creado_en": "2025-06-08T17:34:22.368Z",
+    "actualizado_en": "2025-06-08T17:34:22.368Z"
+  }
+},
+{
+  "model": "products.producto",
+  "pk": 14,
+  "fields": {
+    "titulo": "Shaker de proteÝnas 700ml",
+    "descripcion": "Shaker mezclador para batido de proteÝnas de 700ml.",
+    "precio": "2.99",
+    "imagen": "productos/shaker.webp",
+    "categoria": 1,
+    "vendedor": 4,
+    "creado_en": "2025-06-08T17:37:16.209Z",
+    "actualizado_en": "2025-06-08T17:37:16.209Z"
+  }
+},
+{
+  "model": "orders.pedido",
+  "pk": 1,
+  "fields": {
+    "usuario": 5,
+    "fecha_creacion": "2025-06-08T17:45:19.993Z",
+    "total": "68.69",
+    "estado": "enviado",
+    "calle": "Camino de ┴ngela Espejo 62 Piso 3",
+    "ciudad": "Sevilla",
+    "codigo_postal": "41013",
+    "pais": "Espa±a"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 1,
+  "fields": {
+    "pedido": 1,
+    "producto": 1,
+    "cantidad": 1,
+    "precio_unitario": "30.00"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 2,
+  "fields": {
+    "pedido": 1,
+    "producto": 7,
+    "cantidad": 1,
+    "precio_unitario": "25.99"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 3,
+  "fields": {
+    "pedido": 1,
+    "producto": 12,
+    "cantidad": 1,
+    "precio_unitario": "1.45"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 4,
+  "fields": {
+    "pedido": 1,
+    "producto": 10,
+    "cantidad": 1,
+    "precio_unitario": "11.25"
+  }
+},
+{
+  "model": "orders.metodopago",
+  "pk": 1,
+  "fields": {
+    "nombre": "Tarjeta de CrÚdito",
+    "descripcion": "Pago con tarjeta de crÚdito."
+  }
+},
+{
+  "model": "orders.pago",
+  "pk": 1,
+  "fields": {
+    "pedido": 1,
+    "metodo": 1,
+    "monto": "68.69",
+    "fecha_transaccion": "2025-06-08T17:45:20.002Z",
+    "transaccion_id": "pi_3RXnHXQwqGQ9oC2R1utrI6oJ",
+    "factura_url": null
+  }
+},
+{
+  "model": "communications.notificacion",
+  "pk": 1,
+  "fields": {
+    "usuario": 5,
+    "mensaje": "Tu pedido #1 ha cambiado su estado a: enviado.",
+    "leido": false,
+    "fecha_creacion": "2025-06-08T19:02:40.738Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "jti": "67125a940c8b4320892f193976bb7aa4",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwNDYxNSwiaWF0IjoxNzQ5Mzk5ODE1LCJqdGkiOiI2NzEyNWE5NDBjOGI0MzIwODkyZjE5Mzk3NmJiN2FhNCIsInVzZXJfaWQiOjF9.v7gF-BuMH6vNoQvsJeX_JTVaB8a9vvuy5JJZAUR9w9Y",
+    "created_at": "2025-06-08T16:23:35.386Z",
+    "expires_at": "2025-06-15T16:23:35Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "jti": "576301380c924e9da30abb4d16aa61b4",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwNDc0NywiaWF0IjoxNzQ5Mzk5OTQ3LCJqdGkiOiI1NzYzMDEzODBjOTI0ZTlkYTMwYWJiNGQxNmFhNjFiNCIsInVzZXJfaWQiOjJ9.lbA8CHtd60yU-hB6eDnSmGUUA7u36QoH89Tk6aTTs7g",
+    "created_at": "2025-06-08T16:25:47.128Z",
+    "expires_at": "2025-06-15T16:25:47Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "jti": "84c8e3d10fb740d3aa1516042bcce7b3",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwNTQ1NywiaWF0IjoxNzQ5NDAwNjU3LCJqdGkiOiI4NGM4ZTNkMTBmYjc0MGQzYWExNTE2MDQyYmNjZTdiMyIsInVzZXJfaWQiOjJ9.iJB_Y81jqkw0l41g4qsDGkB7071QXjPnjPUC2ICNWOU",
+    "created_at": "2025-06-08T16:51:53.655Z",
+    "expires_at": "2025-06-15T16:37:37Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "jti": "0a3af362377e4ecb864edaef054d2d7f",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwNjMxMywiaWF0IjoxNzQ5NDAxNTEzLCJqdGkiOiIwYTNhZjM2MjM3N2U0ZWNiODY0ZWRhZWYwNTRkMmQ3ZiIsInVzZXJfaWQiOjJ9.faNZA97EOl2paE8AV7BHr_jCn2u9HNhb8MziuGyypCI",
+    "created_at": "2025-06-08T16:51:53.852Z",
+    "expires_at": "2025-06-15T16:51:53Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 5,
+  "fields": {
+    "user": 3,
+    "jti": "57deeef45e9340e9a1d00c1959481e85",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwNjU3MiwiaWF0IjoxNzQ5NDAxNzcyLCJqdGkiOiI1N2RlZWVmNDVlOTM0MGU5YTFkMDBjMTk1OTQ4MWU4NSIsInVzZXJfaWQiOjN9.OIA0iJybLYh3tUC4j9p8c_ejLxJcEWvXAnkm_CGaSj0",
+    "created_at": "2025-06-08T16:56:12.238Z",
+    "expires_at": "2025-06-15T16:56:12Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 6,
+  "fields": {
+    "user": 4,
+    "jti": "6c3ad07be8734b92825088c7198be7d2",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwODAwMiwiaWF0IjoxNzQ5NDAzMjAyLCJqdGkiOiI2YzNhZDA3YmU4NzM0YjkyODI1MDg4YzcxOThiZTdkMiIsInVzZXJfaWQiOjR9.K7FCLbSw69XDBjHvPEWep0XxpyL-cB1EMV6mO0ICp6E",
+    "created_at": "2025-06-08T17:20:02.257Z",
+    "expires_at": "2025-06-15T17:20:02Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 7,
+  "fields": {
+    "user": 4,
+    "jti": "d9d01d714b134c90940f211b7a07dbab",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwODAwMiwiaWF0IjoxNzQ5NDAzMjAyLCJqdGkiOiJkOWQwMWQ3MTRiMTM0YzkwOTQwZjIxMWI3YTA3ZGJhYiIsInVzZXJfaWQiOjR9.KbZ10_pNIEUoJBR38RN21yAh62Dr2ITQBS_qY3B8mqw",
+    "created_at": "2025-06-08T17:20:02.407Z",
+    "expires_at": "2025-06-15T17:20:02Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 8,
+  "fields": {
+    "user": 4,
+    "jti": "26501ba990c248699f7a3a8f212c7b9e",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwODAwMiwiaWF0IjoxNzQ5NDAzMjAyLCJqdGkiOiIyNjUwMWJhOTkwYzI0ODY5OWY3YTNhOGYyMTJjN2I5ZSIsInVzZXJfaWQiOjR9.UadV05YN-dp7yRVMNBSoa6eCoHkO-0Ndvcy1kRs5tz8",
+    "created_at": "2025-06-08T17:20:02.518Z",
+    "expires_at": "2025-06-15T17:20:02Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 9,
+  "fields": {
+    "user": 4,
+    "jti": "795a1ca21cf0459d9204337880dc270e",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwODAwMiwiaWF0IjoxNzQ5NDAzMjAyLCJqdGkiOiI3OTVhMWNhMjFjZjA0NTlkOTIwNDMzNzg4MGRjMjcwZSIsInVzZXJfaWQiOjR9.ygtkBMmQTSusN_xqVpERJ6LzPVPJ1ssf8NrKwOEIm5g",
+    "created_at": "2025-06-08T17:24:53.210Z",
+    "expires_at": "2025-06-15T17:20:02Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 10,
+  "fields": {
+    "user": 4,
+    "jti": "5de21fb187284da08b75da931beb1e7c",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwODI5MywiaWF0IjoxNzQ5NDAzNDkzLCJqdGkiOiI1ZGUyMWZiMTg3Mjg0ZGEwOGI3NWRhOTMxYmViMWU3YyIsInVzZXJfaWQiOjR9.a-CM1QYC7OUnoi2A2jbHzfWRjTZ_qyDGXXrw65Nl3aA",
+    "created_at": "2025-06-08T17:37:16.116Z",
+    "expires_at": "2025-06-15T17:24:53Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 11,
+  "fields": {
+    "user": 5,
+    "jti": "6c5e2e0ea7374b9292a84c74b89d979c",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwOTQwMSwiaWF0IjoxNzQ5NDA0NjAxLCJqdGkiOiI2YzVlMmUwZWE3Mzc0YjkyOTJhODRjNzRiODlkOTc5YyIsInVzZXJfaWQiOjV9.nnrfFQUKBFTUaMSKYSftaBYyG8XvTIqLWht54bDjgac",
+    "created_at": "2025-06-08T17:43:21.328Z",
+    "expires_at": "2025-06-15T17:43:21Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 12,
+  "fields": {
+    "user": 3,
+    "jti": "6ac9e51717234be3b36b55485c7019a2",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwOTU2OSwiaWF0IjoxNzQ5NDA0NzY5LCJqdGkiOiI2YWM5ZTUxNzE3MjM0YmUzYjM2YjU1NDg1YzcwMTlhMiIsInVzZXJfaWQiOjN9.UmyfWL6DNqJMsmTmb8y5VkYnpztw5BOnLnaNDY71zUw",
+    "created_at": "2025-06-08T17:46:09.892Z",
+    "expires_at": "2025-06-15T17:46:09Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 13,
+  "fields": {
+    "user": 3,
+    "jti": "1066a6bb559a416b92d8836bf77c486a",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAwOTU2OSwiaWF0IjoxNzQ5NDA0NzY5LCJqdGkiOiIxMDY2YTZiYjU1OWE0MTZiOTJkODgzNmJmNzdjNDg2YSIsInVzZXJfaWQiOjN9.x-MFDHr-5j8mY_S-u8PzOfTMGmRC2mHpjwOanSoBLKM",
+    "created_at": "2025-06-08T17:56:22.845Z",
+    "expires_at": "2025-06-15T17:46:09Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 14,
+  "fields": {
+    "user": 3,
+    "jti": "eb19b8b0e936437da4b48cea2746bfb7",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMDE4MiwiaWF0IjoxNzQ5NDA1MzgyLCJqdGkiOiJlYjE5YjhiMGU5MzY0MzdkYTRiNDhjZWEyNzQ2YmZiNyIsInVzZXJfaWQiOjN9.wnuh85M9vyZSqEBgFPGGFPXRPMVG5HRFKA2Gv7yvm20",
+    "created_at": "2025-06-08T17:56:22.946Z",
+    "expires_at": "2025-06-15T17:56:22Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 15,
+  "fields": {
+    "user": 3,
+    "jti": "fab000ec9c504cbc8279c22a0f7f9298",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMDE4MiwiaWF0IjoxNzQ5NDA1MzgyLCJqdGkiOiJmYWIwMDBlYzljNTA0Y2JjODI3OWMyMmEwZjdmOTI5OCIsInVzZXJfaWQiOjN9.oUKM2gwq0jjA0Sq6EjDFEfPK7VL3smFhLdSaAy3Ej_s",
+    "created_at": "2025-06-08T17:56:23.005Z",
+    "expires_at": "2025-06-15T17:56:22Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 16,
+  "fields": {
+    "user": 3,
+    "jti": "4bb3aae84e384a6db815451b9b78557a",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMDE4MywiaWF0IjoxNzQ5NDA1MzgzLCJqdGkiOiI0YmIzYWFlODRlMzg0YTZkYjgxNTQ1MWI5Yjc4NTU3YSIsInVzZXJfaWQiOjN9.ER4-a8MdcSQ-Jfh77bBFvgTG_YNYab_lTrAMOvNPAZ8",
+    "created_at": "2025-06-08T17:56:24.668Z",
+    "expires_at": "2025-06-15T17:56:23Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 17,
+  "fields": {
+    "user": 3,
+    "jti": "40c215faeade40f78a5baf3ddb992b39",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMDE4NCwiaWF0IjoxNzQ5NDA1Mzg0LCJqdGkiOiI0MGMyMTVmYWVhZGU0MGY3OGE1YmFmM2RkYjk5MmIzOSIsInVzZXJfaWQiOjN9.7njLUHzPBQ678lPDNABgEUkZQBf2s-xOqhYW7aTzakc",
+    "created_at": "2025-06-08T18:13:12.881Z",
+    "expires_at": "2025-06-15T17:56:24Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 18,
+  "fields": {
+    "user": 3,
+    "jti": "d38a2c09b7014e19991223d712a75a83",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTE5MiwiaWF0IjoxNzQ5NDA2MzkyLCJqdGkiOiJkMzhhMmMwOWI3MDE0ZTE5OTkxMjIzZDcxMmE3NWE4MyIsInVzZXJfaWQiOjN9.DJ7QJaMtEH3auM2ai7zk1hIvq6j095Lt43-4AbMm_tI",
+    "created_at": "2025-06-08T18:13:12.984Z",
+    "expires_at": "2025-06-15T18:13:12Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 19,
+  "fields": {
+    "user": 3,
+    "jti": "2e33d777897a4dc5b2c1db25a24d95dd",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTE5MiwiaWF0IjoxNzQ5NDA2MzkyLCJqdGkiOiIyZTMzZDc3Nzg5N2E0ZGM1YjJjMWRiMjVhMjRkOTVkZCIsInVzZXJfaWQiOjN9.2qhoH9L6IGm76nqJYX8m0-djE05ozdS3-JmHnDFEMZk",
+    "created_at": "2025-06-08T18:13:13.040Z",
+    "expires_at": "2025-06-15T18:13:12Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 20,
+  "fields": {
+    "user": 3,
+    "jti": "f17fd3da1c3a4db79321e9eea185f1f8",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTE5MywiaWF0IjoxNzQ5NDA2MzkzLCJqdGkiOiJmMTdmZDNkYTFjM2E0ZGI3OTMyMWU5ZWVhMTg1ZjFmOCIsInVzZXJfaWQiOjN9.1bUSw3qzKg_lMh6hKxiHH-BmCGWzc9KKnOP8NNtrhGY",
+    "created_at": "2025-06-08T18:13:13.095Z",
+    "expires_at": "2025-06-15T18:13:13Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 21,
+  "fields": {
+    "user": 3,
+    "jti": "fb402a70c83d4255884a3ce2df8b45a5",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTE5MywiaWF0IjoxNzQ5NDA2MzkzLCJqdGkiOiJmYjQwMmE3MGM4M2Q0MjU1ODg0YTNjZTJkZjhiNDVhNSIsInVzZXJfaWQiOjN9.2O1q0uotb4l_RQU9RbXLK2huOc6g2F81xx6xdrDeD-s",
+    "created_at": "2025-06-08T18:25:42.006Z",
+    "expires_at": "2025-06-15T18:13:13Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 22,
+  "fields": {
+    "user": 3,
+    "jti": "410b5119741f4bf6a91efcdfbce8f11c",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTk0MiwiaWF0IjoxNzQ5NDA3MTQyLCJqdGkiOiI0MTBiNTExOTc0MWY0YmY2YTkxZWZjZGZiY2U4ZjExYyIsInVzZXJfaWQiOjN9.4E7ddisT5_kbMxtkqNXOVDohXW2S_WF7RD2j4pV8sgQ",
+    "created_at": "2025-06-08T18:25:42.064Z",
+    "expires_at": "2025-06-15T18:25:42Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 23,
+  "fields": {
+    "user": 3,
+    "jti": "911f4add27514c10bc03449e9e28723f",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTk0MiwiaWF0IjoxNzQ5NDA3MTQyLCJqdGkiOiI5MTFmNGFkZDI3NTE0YzEwYmMwMzQ0OWU5ZTI4NzIzZiIsInVzZXJfaWQiOjN9._NQSwzQwCO2cAgi-YL5uSlT13Fmq35GivpRwJPQeM2U",
+    "created_at": "2025-06-08T18:25:42.123Z",
+    "expires_at": "2025-06-15T18:25:42Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 24,
+  "fields": {
+    "user": 3,
+    "jti": "5e3f5a9f01f44577b3ef2142a8130696",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTk0MiwiaWF0IjoxNzQ5NDA3MTQyLCJqdGkiOiI1ZTNmNWE5ZjAxZjQ0NTc3YjNlZjIxNDJhODEzMDY5NiIsInVzZXJfaWQiOjN9.nYgX07gKLM7Dt70dF0xj6c7ZfcEXXnepdKBCs0dCmro",
+    "created_at": "2025-06-08T18:25:42.178Z",
+    "expires_at": "2025-06-15T18:25:42Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 25,
+  "fields": {
+    "user": 5,
+    "jti": "3572f3b802ab4d57896c8fe1609c9276",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMjEzNSwiaWF0IjoxNzQ5NDA3MzM1LCJqdGkiOiIzNTcyZjNiODAyYWI0ZDU3ODk2YzhmZTE2MDljOTI3NiIsInVzZXJfaWQiOjV9._z7xN7_uAfT7fwDUI4rz4Qlf_uBAisje2mZTlAhVAPg",
+    "created_at": "2025-06-08T18:28:55.151Z",
+    "expires_at": "2025-06-15T18:28:55Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 26,
+  "fields": {
+    "user": 3,
+    "jti": "d7ae38e33baa42869e73d2e365beeeb9",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMTk0MiwiaWF0IjoxNzQ5NDA3MTQyLCJqdGkiOiJkN2FlMzhlMzNiYWE0Mjg2OWU3M2QyZTM2NWJlZWViOSIsInVzZXJfaWQiOjN9.vQWxEi-CgvaGKXEO-HR504ih1Yz8Tx1VKT9Nvqzysnc",
+    "created_at": "2025-06-08T18:41:59.501Z",
+    "expires_at": "2025-06-15T18:25:42Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 27,
+  "fields": {
+    "user": 3,
+    "jti": "a96340d703994ecc97f360443ed98cac",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMjkxOSwiaWF0IjoxNzQ5NDA4MTE5LCJqdGkiOiJhOTYzNDBkNzAzOTk0ZWNjOTdmMzYwNDQzZWQ5OGNhYyIsInVzZXJfaWQiOjN9.PEGmB0V5kpLNuD1DcenxIN21eBJKlrM7J7wYIql671s",
+    "created_at": "2025-06-08T18:41:59.663Z",
+    "expires_at": "2025-06-15T18:41:59Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 28,
+  "fields": {
+    "user": 3,
+    "jti": "a736f4c55be748149e2409ca7b53f0a2",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMjkxOSwiaWF0IjoxNzQ5NDA4MTE5LCJqdGkiOiJhNzM2ZjRjNTViZTc0ODE0OWUyNDA5Y2E3YjUzZjBhMiIsInVzZXJfaWQiOjN9.VNpblmVff3CB3pkCGcO8s0bHC3-V5YeYWEmokSlbj7E",
+    "created_at": "2025-06-08T18:41:59.721Z",
+    "expires_at": "2025-06-15T18:41:59Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 29,
+  "fields": {
+    "user": 3,
+    "jti": "f00b35e7037c4b8e9cf1097f1c9c9466",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMjkxOSwiaWF0IjoxNzQ5NDA4MTE5LCJqdGkiOiJmMDBiMzVlNzAzN2M0YjhlOWNmMTA5N2YxYzljOTQ2NiIsInVzZXJfaWQiOjN9.Igyx-LpyyX1BIaP0Ju14i9DdmKCMvESiu_wuQpcRHFY",
+    "created_at": "2025-06-08T18:41:59.789Z",
+    "expires_at": "2025-06-15T18:41:59Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 30,
+  "fields": {
+    "user": 3,
+    "jti": "2fff2d343e8c421fa4d638f8d53b67cf",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMjkxOSwiaWF0IjoxNzQ5NDA4MTE5LCJqdGkiOiIyZmZmMmQzNDNlOGM0MjFmYTRkNjM4ZjhkNTNiNjdjZiIsInVzZXJfaWQiOjN9.vZIW-q4tFoaMGCBmpmyB8DDaMMTRRhZgwYffBhMoqcQ",
+    "created_at": "2025-06-08T19:01:49.670Z",
+    "expires_at": "2025-06-15T18:41:59Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 31,
+  "fields": {
+    "user": 3,
+    "jti": "1604cd49102448f9b089898a6c1c5221",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxNDEwOSwiaWF0IjoxNzQ5NDA5MzA5LCJqdGkiOiIxNjA0Y2Q0OTEwMjQ0OGY5YjA4OTg5OGE2YzFjNTIyMSIsInVzZXJfaWQiOjN9._Oy7SYeEHkG7LRK_gHcg8htHz4mR_6X8ltfNfU15k3w",
+    "created_at": "2025-06-08T19:01:49.725Z",
+    "expires_at": "2025-06-15T19:01:49Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 32,
+  "fields": {
+    "user": 3,
+    "jti": "ed5dff5221b44a948dd5109b635429e6",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxNDEwOSwiaWF0IjoxNzQ5NDA5MzA5LCJqdGkiOiJlZDVkZmY1MjIxYjQ0YTk0OGRkNTEwOWI2MzU0MjllNiIsInVzZXJfaWQiOjN9.vROWOW9-QvK0Cej2pHaAWoCxFS8lnbQhFF2fYyW-Lyw",
+    "created_at": "2025-06-08T19:01:49.784Z",
+    "expires_at": "2025-06-15T19:01:49Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 33,
+  "fields": {
+    "user": 3,
+    "jti": "5640107ab0054dc29870b403ffab4774",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxNDEwOSwiaWF0IjoxNzQ5NDA5MzA5LCJqdGkiOiI1NjQwMTA3YWIwMDU0ZGMyOTg3MGI0MDNmZmFiNDc3NCIsInVzZXJfaWQiOjN9.rVqf1I_nvjnJ4M2h46sV3KADPAy6PSDlwveNZTfQoUc",
+    "created_at": "2025-06-08T19:01:49.840Z",
+    "expires_at": "2025-06-15T19:01:49Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 34,
+  "fields": {
+    "user": 3,
+    "jti": "c322b44dcebf4d1eb255b175f7c61f8e",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxNDEwOSwiaWF0IjoxNzQ5NDA5MzA5LCJqdGkiOiJjMzIyYjQ0ZGNlYmY0ZDFlYjI1NWIxNzVmN2M2MWY4ZSIsInVzZXJfaWQiOjN9.xLf7IupA8cpT9RE8ofOAaj1Jzkgw6fmOfytYb6vLVU4",
+    "created_at": "2025-06-08T19:01:49.898Z",
+    "expires_at": "2025-06-15T19:01:49Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 35,
+  "fields": {
+    "user": 3,
+    "jti": "b54622f7191e4c889155cde5facdbd16",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxNDEwOSwiaWF0IjoxNzQ5NDA5MzA5LCJqdGkiOiJiNTQ2MjJmNzE5MWU0Yzg4OTE1NWNkZTVmYWNkYmQxNiIsInVzZXJfaWQiOjN9.2QGpMeu2tAAgmAhkazDYAtOrN0gFd0oTQv4z2LKhvlo",
+    "created_at": "2025-06-08T19:01:49.995Z",
+    "expires_at": "2025-06-15T19:01:49Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 36,
+  "fields": {
+    "user": 5,
+    "jti": "e021be7fe2b946a7b7075b1fd15b90b5",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxMjEzNSwiaWF0IjoxNzQ5NDA3MzM1LCJqdGkiOiJlMDIxYmU3ZmUyYjk0NmE3YjcwNzViMWZkMTViOTBiNSIsInVzZXJfaWQiOjV9.6xzFSN28bj40pNHBdvPHZklNucKrciRxhwep0GF_nLA",
+    "created_at": "2025-06-08T19:02:50.733Z",
+    "expires_at": "2025-06-15T18:28:55Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 37,
+  "fields": {
+    "user": 3,
+    "jti": "23d27de324bc46e08524fd75d8252968",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3MTg5OCwiaWF0IjoxNzQ5NDY3MDk4LCJqdGkiOiIyM2QyN2RlMzI0YmM0NmUwODUyNGZkNzVkODI1Mjk2OCIsInVzZXJfaWQiOjN9.8b4ZeSSUgvYAN-EKt4XRojm9Opyy_C12W6TBeS3cuNM",
+    "created_at": "2025-06-09T11:35:18.874Z",
+    "expires_at": "2025-06-16T11:04:58Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 38,
+  "fields": {
+    "user": 3,
+    "jti": "2b2d8dea0ef44c8fa9e113007fc9bfff",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3MzcxOCwiaWF0IjoxNzQ5NDY4OTE4LCJqdGkiOiIyYjJkOGRlYTBlZjQ0YzhmYTllMTEzMDA3ZmM5YmZmZiIsInVzZXJfaWQiOjN9.l6izFDhhZYZzQNFyeMYrJfToVNXARv3lsP1j1tLLWb0",
+    "created_at": "2025-06-09T11:35:18.937Z",
+    "expires_at": "2025-06-16T11:35:18Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 39,
+  "fields": {
+    "user": 3,
+    "jti": "96e56676ade148fda9069daff13a46f4",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3MzcxOCwiaWF0IjoxNzQ5NDY4OTE4LCJqdGkiOiI5NmU1NjY3NmFkZTE0OGZkYTkwNjlkYWZmMTNhNDZmNCIsInVzZXJfaWQiOjN9.9ctcEv2oRkiMmQu7bL_S2eIu_qguinM8LFISRdcHVd8",
+    "created_at": "2025-06-09T11:35:18.993Z",
+    "expires_at": "2025-06-16T11:35:18Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 40,
+  "fields": {
+    "user": 3,
+    "jti": "d1103e61fde54ffc9eb9feeaf45f36a7",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3MzcxOCwiaWF0IjoxNzQ5NDY4OTE4LCJqdGkiOiJkMTEwM2U2MWZkZTU0ZmZjOWViOWZlZWFmNDVmMzZhNyIsInVzZXJfaWQiOjN9.DCnAm21i1ZS4vvCjAwlpqASuay6AKPntxOzsN_NSIbI",
+    "created_at": "2025-06-09T11:35:19.049Z",
+    "expires_at": "2025-06-16T11:35:18Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 41,
+  "fields": {
+    "user": 5,
+    "jti": "7e59271b53084d2dba27e4bd85c2b48f",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDAxNDE3MCwiaWF0IjoxNzQ5NDA5MzcwLCJqdGkiOiI3ZTU5MjcxYjUzMDg0ZDJkYmEyN2U0YmQ4NWMyYjQ4ZiIsInVzZXJfaWQiOjV9.NYv6VEKGXBX_X9wfnjRH_G5IERkrpHW3WQFxfBYEC0g",
+    "created_at": "2025-06-09T11:36:45.835Z",
+    "expires_at": "2025-06-15T19:02:50Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 42,
+  "fields": {
+    "user": 5,
+    "jti": "bcd15ee6885b4477865050c76ed897cd",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3MzgwNSwiaWF0IjoxNzQ5NDY5MDA1LCJqdGkiOiJiY2QxNWVlNjg4NWI0NDc3ODY1MDUwYzc2ZWQ4OTdjZCIsInVzZXJfaWQiOjV9.UJtdi6Sybt1vhTvvehw0Nl1ygLtEAYLQWTLTyufYRPk",
+    "created_at": "2025-06-09T11:38:54.137Z",
+    "expires_at": "2025-06-16T11:36:45Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 43,
+  "fields": {
+    "user": 5,
+    "jti": "a663c3e9dd4a4889a5cb73ac0ec1233e",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3MzkzNCwiaWF0IjoxNzQ5NDY5MTM0LCJqdGkiOiJhNjYzYzNlOWRkNGE0ODg5YTVjYjczYWMwZWMxMjMzZSIsInVzZXJfaWQiOjV9.ssOkrfFn_4RosMZl_GuKHbWOt7L2F4fDKjil3bIHn4I",
+    "created_at": "2025-06-09T11:38:55.325Z",
+    "expires_at": "2025-06-16T11:38:54Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 44,
+  "fields": {
+    "user": 5,
+    "jti": "52ecac233a1f442aaf120c397eba2f01",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3MzkzNSwiaWF0IjoxNzQ5NDY5MTM1LCJqdGkiOiI1MmVjYWMyMzNhMWY0NDJhYWYxMjBjMzk3ZWJhMmYwMSIsInVzZXJfaWQiOjV9._pcUJIRBBorpJK46Wq3-KkCLa7vi3pjkYmg1xCYYBVI",
+    "created_at": "2025-06-09T11:39:11.851Z",
+    "expires_at": "2025-06-16T11:38:55Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 45,
+  "fields": {
+    "user": 5,
+    "jti": "fadf95b283dc490291e896b5135c2d1c",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3Mzk1MSwiaWF0IjoxNzQ5NDY5MTUxLCJqdGkiOiJmYWRmOTViMjgzZGM0OTAyOTFlODk2YjUxMzVjMmQxYyIsInVzZXJfaWQiOjV9.M1d7fCAOfqu_5znRqVhOL0J7ZQPvE8ZSpBKC85EW0YA",
+    "created_at": "2025-06-09T11:40:01.967Z",
+    "expires_at": "2025-06-16T11:39:11Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 46,
+  "fields": {
+    "user": 1,
+    "jti": "06fa194600e9464bbc15c3d6808e465d",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NDA1NCwiaWF0IjoxNzQ5NDY5MjU0LCJqdGkiOiIwNmZhMTk0NjAwZTk0NjRiYmMxNWMzZDY4MDhlNDY1ZCIsInVzZXJfaWQiOjF9.CMJ0leEfsXWTNKsoe_LfkA5rLePwlujkuiHndunNho4",
+    "created_at": "2025-06-09T11:40:54.412Z",
+    "expires_at": "2025-06-16T11:40:54Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 47,
+  "fields": {
+    "user": 1,
+    "jti": "1735189a9a7349bf820912e5e01d25a1",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NDA1NCwiaWF0IjoxNzQ5NDY5MjU0LCJqdGkiOiIxNzM1MTg5YTlhNzM0OWJmODIwOTEyZTVlMDFkMjVhMSIsInVzZXJfaWQiOjF9.p3bh9ntP3Fshag6p8dF3yOsfJfKFxNUbc-J1b_6UDRg",
+    "created_at": "2025-06-09T11:46:29.431Z",
+    "expires_at": "2025-06-16T11:40:54Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 48,
+  "fields": {
+    "user": 1,
+    "jti": "72cc460d19cb40deb5dad448efddf925",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NDM4OSwiaWF0IjoxNzQ5NDY5NTg5LCJqdGkiOiI3MmNjNDYwZDE5Y2I0MGRlYjVkYWQ0NDhlZmRkZjkyNSIsInVzZXJfaWQiOjF9.jl1kvG1Kv_n19w3rXwzdSH7Uov07vIUKoduoPZ8KMzI",
+    "created_at": "2025-06-09T11:47:32.992Z",
+    "expires_at": "2025-06-16T11:46:29Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 49,
+  "fields": {
+    "user": 1,
+    "jti": "abb80b2262d14c19a32aa9206ab91b92",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NDQ1MiwiaWF0IjoxNzQ5NDY5NjUyLCJqdGkiOiJhYmI4MGIyMjYyZDE0YzE5YTMyYWE5MjA2YWI5MWI5MiIsInVzZXJfaWQiOjF9.K0Vqe6ynXToqY2G5ZBFRDKFDeoKdBx2rIp7VGwfLwqU",
+    "created_at": "2025-06-09T11:50:53.450Z",
+    "expires_at": "2025-06-16T11:47:32Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 50,
+  "fields": {
+    "user": 1,
+    "jti": "ed70016b60404115a255cba433f4813e",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NDY1MywiaWF0IjoxNzQ5NDY5ODUzLCJqdGkiOiJlZDcwMDE2YjYwNDA0MTE1YTI1NWNiYTQzM2Y0ODEzZSIsInVzZXJfaWQiOjF9.Wz2zYgap7MtFUSrH-wAUgQMMcrWKoRa_pGa2KZ-egtg",
+    "created_at": "2025-06-09T12:05:18.696Z",
+    "expires_at": "2025-06-16T11:50:53Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 51,
+  "fields": {
+    "user": 1,
+    "jti": "26e7361f6aa54c67bcd35efdfcc57cb8",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NTUxOCwiaWF0IjoxNzQ5NDcwNzE4LCJqdGkiOiIyNmU3MzYxZjZhYTU0YzY3YmNkMzVlZmRmY2M1N2NiOCIsInVzZXJfaWQiOjF9.HDYg0MIAcWofapBVEMMtlAQNkwESNFAS7SqS81zj0t4",
+    "created_at": "2025-06-09T12:05:18.751Z",
+    "expires_at": "2025-06-16T12:05:18Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 52,
+  "fields": {
+    "user": 1,
+    "jti": "4ee0a398750645509e8bef5114a549f2",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NTUxOCwiaWF0IjoxNzQ5NDcwNzE4LCJqdGkiOiI0ZWUwYTM5ODc1MDY0NTUwOWU4YmVmNTExNGE1NDlmMiIsInVzZXJfaWQiOjF9.Sy5nRCPjbAF5RJapMDaiHW3s9AxJMYtdI5jjDCm-fxc",
+    "created_at": "2025-06-09T12:05:18.806Z",
+    "expires_at": "2025-06-16T12:05:18Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 53,
+  "fields": {
+    "user": 1,
+    "jti": "94569c9c6c844a44939fd24b582c4b62",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MDA3NTUxOCwiaWF0IjoxNzQ5NDcwNzE4LCJqdGkiOiI5NDU2OWM5YzZjODQ0YTQ0OTM5ZmQyNGI1ODJjNGI2MiIsInVzZXJfaWQiOjF9.EZ4U5Ky2iDQn8G_v0rFVOKpEnuAPJHHJ3voOBCmRav0",
+    "created_at": "2025-06-09T12:05:18.860Z",
+    "expires_at": "2025-06-16T12:05:18Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 1,
+  "fields": {
+    "token": 1,
+    "blacklisted_at": "2025-06-08T16:23:35.517Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 2,
+  "fields": {
+    "token": 2,
+    "blacklisted_at": "2025-06-08T16:37:37.820Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 3,
+  "fields": {
+    "token": 3,
+    "blacklisted_at": "2025-06-08T16:51:53.805Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 4,
+  "fields": {
+    "token": 4,
+    "blacklisted_at": "2025-06-08T16:51:53.884Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 5,
+  "fields": {
+    "token": 5,
+    "blacklisted_at": "2025-06-08T17:08:59.592Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 6,
+  "fields": {
+    "token": 6,
+    "blacklisted_at": "2025-06-08T17:20:02.348Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 7,
+  "fields": {
+    "token": 7,
+    "blacklisted_at": "2025-06-08T17:20:02.453Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 8,
+  "fields": {
+    "token": 8,
+    "blacklisted_at": "2025-06-08T17:20:02.566Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 9,
+  "fields": {
+    "token": 9,
+    "blacklisted_at": "2025-06-08T17:24:53.267Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 10,
+  "fields": {
+    "token": 10,
+    "blacklisted_at": "2025-06-08T17:37:16.161Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 11,
+  "fields": {
+    "token": 11,
+    "blacklisted_at": "2025-06-08T17:45:04.790Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 12,
+  "fields": {
+    "token": 12,
+    "blacklisted_at": "2025-06-08T17:46:09.955Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 13,
+  "fields": {
+    "token": 13,
+    "blacklisted_at": "2025-06-08T17:56:22.889Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 14,
+  "fields": {
+    "token": 14,
+    "blacklisted_at": "2025-06-08T17:56:22.998Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 15,
+  "fields": {
+    "token": 15,
+    "blacklisted_at": "2025-06-08T17:56:23.045Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 16,
+  "fields": {
+    "token": 16,
+    "blacklisted_at": "2025-06-08T17:56:24.714Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 17,
+  "fields": {
+    "token": 17,
+    "blacklisted_at": "2025-06-08T18:13:12.926Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 18,
+  "fields": {
+    "token": 18,
+    "blacklisted_at": "2025-06-08T18:13:13.029Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 19,
+  "fields": {
+    "token": 19,
+    "blacklisted_at": "2025-06-08T18:13:13.087Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 20,
+  "fields": {
+    "token": 20,
+    "blacklisted_at": "2025-06-08T18:13:13.140Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 21,
+  "fields": {
+    "token": 21,
+    "blacklisted_at": "2025-06-08T18:25:42.053Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 22,
+  "fields": {
+    "token": 22,
+    "blacklisted_at": "2025-06-08T18:25:42.112Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 23,
+  "fields": {
+    "token": 23,
+    "blacklisted_at": "2025-06-08T18:25:42.168Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 24,
+  "fields": {
+    "token": 24,
+    "blacklisted_at": "2025-06-08T18:25:42.227Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 25,
+  "fields": {
+    "token": 25,
+    "blacklisted_at": "2025-06-08T18:28:55.247Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 26,
+  "fields": {
+    "token": 26,
+    "blacklisted_at": "2025-06-08T18:41:59.653Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 27,
+  "fields": {
+    "token": 27,
+    "blacklisted_at": "2025-06-08T18:41:59.712Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 28,
+  "fields": {
+    "token": 28,
+    "blacklisted_at": "2025-06-08T18:41:59.773Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 29,
+  "fields": {
+    "token": 29,
+    "blacklisted_at": "2025-06-08T18:41:59.837Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 30,
+  "fields": {
+    "token": 30,
+    "blacklisted_at": "2025-06-08T19:01:49.713Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 31,
+  "fields": {
+    "token": 31,
+    "blacklisted_at": "2025-06-08T19:01:49.769Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 32,
+  "fields": {
+    "token": 32,
+    "blacklisted_at": "2025-06-08T19:01:49.831Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 33,
+  "fields": {
+    "token": 33,
+    "blacklisted_at": "2025-06-08T19:01:49.887Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 34,
+  "fields": {
+    "token": 34,
+    "blacklisted_at": "2025-06-08T19:01:49.947Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 35,
+  "fields": {
+    "token": 35,
+    "blacklisted_at": "2025-06-08T19:01:50.045Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 36,
+  "fields": {
+    "token": 36,
+    "blacklisted_at": "2025-06-08T19:02:50.798Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 37,
+  "fields": {
+    "token": 37,
+    "blacklisted_at": "2025-06-09T11:35:18.926Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 38,
+  "fields": {
+    "token": 38,
+    "blacklisted_at": "2025-06-09T11:35:18.984Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 39,
+  "fields": {
+    "token": 39,
+    "blacklisted_at": "2025-06-09T11:35:19.040Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 40,
+  "fields": {
+    "token": 40,
+    "blacklisted_at": "2025-06-09T11:35:19.102Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 41,
+  "fields": {
+    "token": 41,
+    "blacklisted_at": "2025-06-09T11:36:45.891Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 42,
+  "fields": {
+    "token": 42,
+    "blacklisted_at": "2025-06-09T11:38:54.190Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 43,
+  "fields": {
+    "token": 43,
+    "blacklisted_at": "2025-06-09T11:38:55.384Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 44,
+  "fields": {
+    "token": 44,
+    "blacklisted_at": "2025-06-09T11:39:11.908Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 45,
+  "fields": {
+    "token": 45,
+    "blacklisted_at": "2025-06-09T11:40:02.034Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 46,
+  "fields": {
+    "token": 46,
+    "blacklisted_at": "2025-06-09T11:40:54.488Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 47,
+  "fields": {
+    "token": 47,
+    "blacklisted_at": "2025-06-09T11:46:29.487Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 48,
+  "fields": {
+    "token": 48,
+    "blacklisted_at": "2025-06-09T11:47:33.052Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 49,
+  "fields": {
+    "token": 49,
+    "blacklisted_at": "2025-06-09T11:50:53.507Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 50,
+  "fields": {
+    "token": 50,
+    "blacklisted_at": "2025-06-09T12:05:18.741Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 51,
+  "fields": {
+    "token": 51,
+    "blacklisted_at": "2025-06-09T12:05:18.798Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 52,
+  "fields": {
+    "token": 52,
+    "blacklisted_at": "2025-06-09T12:05:18.854Z"
+  }
+},
+{
+  "model": "token_blacklist.blacklistedtoken",
+  "pk": 53,
+  "fields": {
+    "token": 53,
+    "blacklisted_at": "2025-06-09T12:05:18.910Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 1,
+    "codename": "add_usuario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 1,
+    "codename": "change_usuario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 1,
+    "codename": "delete_usuario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 1,
+    "codename": "view_usuario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add direccion",
+    "content_type": 2,
+    "codename": "add_direccion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change direccion",
+    "content_type": 2,
+    "codename": "change_direccion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete direccion",
+    "content_type": 2,
+    "codename": "delete_direccion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view direccion",
+    "content_type": 2,
+    "codename": "view_direccion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add solicitud gestor",
+    "content_type": 3,
+    "codename": "add_solicitudgestor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change solicitud gestor",
+    "content_type": 3,
+    "codename": "change_solicitudgestor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete solicitud gestor",
+    "content_type": 3,
+    "codename": "delete_solicitudgestor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view solicitud gestor",
+    "content_type": 3,
+    "codename": "view_solicitudgestor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add categoria",
+    "content_type": 4,
+    "codename": "add_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change categoria",
+    "content_type": 4,
+    "codename": "change_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete categoria",
+    "content_type": 4,
+    "codename": "delete_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view categoria",
+    "content_type": 4,
+    "codename": "view_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add producto",
+    "content_type": 5,
+    "codename": "add_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change producto",
+    "content_type": 5,
+    "codename": "change_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete producto",
+    "content_type": 5,
+    "codename": "delete_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view producto",
+    "content_type": 5,
+    "codename": "view_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add rese±a",
+    "content_type": 6,
+    "codename": "add_rese±a"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change rese±a",
+    "content_type": 6,
+    "codename": "change_rese±a"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete rese±a",
+    "content_type": 6,
+    "codename": "delete_rese±a"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view rese±a",
+    "content_type": 6,
+    "codename": "view_rese±a"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add pedido",
+    "content_type": 7,
+    "codename": "add_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change pedido",
+    "content_type": 7,
+    "codename": "change_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete pedido",
+    "content_type": 7,
+    "codename": "delete_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view pedido",
+    "content_type": 7,
+    "codename": "view_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add order item",
+    "content_type": 8,
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change order item",
+    "content_type": 8,
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete order item",
+    "content_type": 8,
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view order item",
+    "content_type": 8,
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add metodo pago",
+    "content_type": 9,
+    "codename": "add_metodopago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change metodo pago",
+    "content_type": 9,
+    "codename": "change_metodopago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete metodo pago",
+    "content_type": 9,
+    "codename": "delete_metodopago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view metodo pago",
+    "content_type": 9,
+    "codename": "view_metodopago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add pago",
+    "content_type": 10,
+    "codename": "add_pago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change pago",
+    "content_type": 10,
+    "codename": "change_pago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete pago",
+    "content_type": 10,
+    "codename": "delete_pago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view pago",
+    "content_type": 10,
+    "codename": "view_pago"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add notificacion",
+    "content_type": 11,
+    "codename": "add_notificacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change notificacion",
+    "content_type": 11,
+    "codename": "change_notificacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete notificacion",
+    "content_type": 11,
+    "codename": "delete_notificacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view notificacion",
+    "content_type": 11,
+    "codename": "view_notificacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add mensaje",
+    "content_type": 12,
+    "codename": "add_mensaje"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change mensaje",
+    "content_type": 12,
+    "codename": "change_mensaje"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete mensaje",
+    "content_type": 12,
+    "codename": "delete_mensaje"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view mensaje",
+    "content_type": 12,
+    "codename": "view_mensaje"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add outstanding token",
+    "content_type": 13,
+    "codename": "add_outstandingtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change outstanding token",
+    "content_type": 13,
+    "codename": "change_outstandingtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete outstanding token",
+    "content_type": 13,
+    "codename": "delete_outstandingtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view outstanding token",
+    "content_type": 13,
+    "codename": "view_outstandingtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add blacklisted token",
+    "content_type": 14,
+    "codename": "add_blacklistedtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change blacklisted token",
+    "content_type": 14,
+    "codename": "change_blacklistedtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete blacklisted token",
+    "content_type": 14,
+    "codename": "delete_blacklistedtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view blacklisted token",
+    "content_type": 14,
+    "codename": "view_blacklistedtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add Password Reset Token",
+    "content_type": 15,
+    "codename": "add_resetpasswordtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change Password Reset Token",
+    "content_type": 15,
+    "codename": "change_resetpasswordtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete Password Reset Token",
+    "content_type": 15,
+    "codename": "delete_resetpasswordtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view Password Reset Token",
+    "content_type": 15,
+    "codename": "view_resetpasswordtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 16,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 16,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 16,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 16,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 17,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 17,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 17,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 17,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 18,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 18,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 18,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 18,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 19,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 19,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 19,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 19,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 20,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 20,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 20,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 20,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "accounts",
+    "model": "usuario"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "accounts",
+    "model": "direccion"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "accounts",
+    "model": "solicitudgestor"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "products",
+    "model": "categoria"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "products",
+    "model": "producto"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "products",
+    "model": "rese±a"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "orders",
+    "model": "pedido"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "orders",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "orders",
+    "model": "metodopago"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "orders",
+    "model": "pago"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "communications",
+    "model": "notificacion"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "communications",
+    "model": "mensaje"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "token_blacklist",
+    "model": "outstandingtoken"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "token_blacklist",
+    "model": "blacklistedtoken"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "django_rest_passwordreset",
+    "model": "resetpasswordtoken"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+}
+]
